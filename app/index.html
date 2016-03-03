@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
+<style>
+.button {
+    background-color: #e7e7e7;
+    border: black;
+    color: #505050;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.button:focus {outline:0;}
+
+.disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+.board{
+  
+    width: 100%;
+    height:  100%;
+}
+.pane-conection{
+    height: 50px;
+}
+</style>
+</head>
+
+<body>
+     	
+    <div class="container" >
+    <hr>
+    <div class="row pane-conection">
+    <label for="ports">Puerto </label>
+                <select id="ports">
+        </select>
+        <button id="button_conect" >Conectar</button>
+         <p id="error-conect" ></p>
+    </div>
+    <hr>
+        <div class="row">
+           
+            <div class="col-xs-6">
+                <h3>Click</h3>
+                    <p>
+                        <button class="btn btn-success" id="button_righ">Derecha</button>
+                        <button class="btn btn-primary" id="button_left">Izquierda</button>
+                        <button class="btn " id="button_stop">Stop</button>
+
+                        
+                    </p>
+                    <h3>Toggle</h3>
+                    <p>
+                        <button class="btn btn-success" id="button_righ-toggle">Derecha</button>
+                        <button class="btn btn-primary" id="button_left-toggle">Izquierda</button>
+
+                        
+                    </p>
+            </div>
+            <div class="col-xs-6">
+                <img src="icons/motor_stop.png" class="board" alt="board" id="board-status">
+            </div>
+        </div>
+    </div>
+
+
+
+<script src="js/jquery-1.11.3.min.js" onload="window.$ = window.jQuery = module.exports;"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
+
